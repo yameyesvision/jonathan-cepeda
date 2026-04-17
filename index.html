@@ -1,337 +1,405 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
+<html class="dark" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>JONATHAN CEPEDA | THE KINETIC EDGE</title>
+<meta name="description" content="Jonathan Cepeda — Professional Fighter (19-2, 18 KOs), Spiritual Mindset Coach. Built through faith, forged through war."/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-secondary-container": "#c1bfbe",
-                      "on-primary": "#4f3e00",
-                      "on-primary-fixed-variant": "#705900",
-                      "background": "#0e0e0e",
-                      "on-primary-fixed": "#4e3d00",
-                      "on-tertiary-fixed-variant": "#656667",
-                      "secondary-container": "#3c3b3b",
-                      "on-surface": "#e5e5e5",
-                      "secondary": "#9f9d9d",
-                      "on-error": "#450900",
-                      "surface-tint": "#e9c349",
-                      "primary-fixed-dim": "#f8d056",
-                      "secondary-fixed": "#e5e2e1",
-                      "surface-variant": "#262626",
-                      "on-tertiary-fixed": "#484a4a",
-                      "on-error-container": "#ff9b82",
-                      "surface-container-highest": "#262626",
-                      "on-background": "#e5e5e5",
-                      "primary-dim": "#dab53d",
-                      "inverse-primary": "#745c00",
-                      "surface-container": "#191919",
-                      "on-surface-variant": "#ababab",
-                      "on-secondary-fixed-variant": "#5c5b5b",
-                      "surface-container-high": "#1f1f1f",
-                      "secondary-dim": "#9f9d9d",
-                      "surface-dim": "#0e0e0e",
-                      "inverse-on-surface": "#555555",
-                      "on-tertiary-container": "#555757",
-                      "on-secondary": "#202020",
-                      "primary-fixed": "#ffe088",
-                      "surface": "#0e0e0e",
-                      "on-tertiary": "#5e5f60",
-                      "tertiary": "#f9f9f9",
-                      "surface-container-low": "#131313",
-                      "surface-bright": "#2c2c2c",
-                      "on-secondary-fixed": "#403f3f",
-                      "error-container": "#7e2b17",
-                      "error-dim": "#ba573f",
-                      "error": "#ed7f64",
-                      "tertiary-dim": "#ebebeb",
-                      "surface-container-lowest": "#000000",
-                      "secondary-fixed-dim": "#d6d4d3",
-                      "on-primary-container": "#f4cc52",
-                      "primary": "#e9c349",
-                      "outline": "#757575",
-                      "outline-variant": "#484848",
-                      "inverse-surface": "#f9f9f9",
-                      "tertiary-fixed-dim": "#e5e5e5",
-                      "tertiary-container": "#ebebeb",
-                      "primary-container": "#574500",
-                      "tertiary-fixed": "#f3f3f4"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0px",
-                      "lg": "0px",
-                      "xl": "0px",
-                      "full": "9999px"
-              },
-              "fontFamily": {
-                      "headline": ["Space Grotesk"],
-                      "body": ["Inter"],
-                      "label": ["Inter"]
-              }
-            },
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-container": "#c1bfbe",
+            "on-primary": "#4f3e00",
+            "on-primary-fixed-variant": "#705900",
+            "background": "#0e0e0e",
+            "on-primary-fixed": "#4e3d00",
+            "secondary-container": "#3c3b3b",
+            "on-surface": "#e5e5e5",
+            "secondary": "#9f9d9d",
+            "surface-tint": "#e9c349",
+            "primary-fixed-dim": "#f8d056",
+            "surface-variant": "#262626",
+            "surface-container-highest": "#262626",
+            "on-background": "#e5e5e5",
+            "primary-dim": "#dab53d",
+            "surface-container": "#191919",
+            "on-surface-variant": "#ababab",
+            "surface-container-high": "#1f1f1f",
+            "surface-dim": "#0e0e0e",
+            "on-secondary": "#202020",
+            "primary-fixed": "#ffe088",
+            "surface": "#0e0e0e",
+            "surface-container-low": "#131313",
+            "surface-bright": "#2c2c2c",
+            "surface-container-lowest": "#000000",
+            "on-primary-container": "#f4cc52",
+            "primary": "#e9c349",
+            "outline": "#757575",
+            "outline-variant": "#484848",
+            "inverse-surface": "#f9f9f9",
+            "primary-container": "#574500",
           },
-        }
-    </script>
-<style>
-        body { font-family: 'Inter', sans-serif; background-color: #0e0e0e; color: #e5e5e5; }
-        .font-headline { font-family: 'Space Grotesk', sans-serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .btn-gold-glow:hover { box-shadow: 0 0 20px rgba(233, 195, 73, 0.3); }
-        .text-stroke-thin { -webkit-text-stroke: 1px rgba(233, 195, 73, 0.3); color: transparent; }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
+          borderRadius: {
+            DEFAULT: "0px",
+            lg: "0px",
+            xl: "0px",
+            full: "9999px",
+          },
+          fontFamily: {
+            headline: ["Space Grotesk", "sans-serif"],
+            body: ["Inter", "sans-serif"],
+          },
+        },
+      },
     }
-  </style>
-  </head>
+</script>
+<style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0e0e;
+      color: #e5e5e5;
+      min-height: 100dvh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-headline { font-family: 'Space Grotesk', sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .btn-gold-glow:hover { box-shadow: 0 0 20px rgba(233, 195, 73, 0.3); }
+    .text-stroke-thin { -webkit-text-stroke: 1px rgba(233, 195, 73, 0.3); color: transparent; }
+
+    /* Mobile menu */
+    .mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
+    .mobile-menu.open { transform: translateX(0); }
+
+    /* Video containers */
+    .video-card { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+    .video-card iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
 <body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
-<!-- Navbar: Shared Component (TopAppBar) -->
+
+<!-- Navbar -->
 <nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-md">
-<div class="flex justify-between items-center px-6 py-4 max-w-full">
-<div class="text-2xl font-black tracking-tighter text-[#e9c349] font-headline uppercase">
-                CE P E D A
-            </div>
-<!-- Desktop Menu -->
-<div class="hidden md:flex items-center space-x-8 font-headline font-bold text-xs tracking-widest text-white">
-<a class="hover:text-[#e9c349] transition-colors duration-300" href="#about">ABOUT</a>
-<a class="hover:text-[#e9c349] transition-colors duration-300" href="#message">MESSAGE</a>
-<a class="hover:text-[#e9c349] transition-colors duration-300" href="#fighter">FIGHTER</a>
-<a class="hover:text-[#e9c349] transition-colors duration-300" href="#media">MEDIA</a>
-<a class="hover:text-[#e9c349] transition-colors duration-300" href="#coaching">COACHING</a>
-<a class="px-6 py-2 bg-primary text-on-primary text-[#4f3e00] hover:bg-primary-dim transition-all" href="#contact">JOIN THE ELITE</a>
-</div>
-<!-- Mobile Menu Icon -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
-</button>
-</div>
+  <div class="flex justify-between items-center px-6 py-4 max-w-full">
+    <a href="#" class="text-2xl font-black tracking-tighter text-[#e9c349] font-headline uppercase">
+      CE P E D A
+    </a>
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-8 font-headline font-bold text-xs tracking-widest text-white">
+      <a class="hover:text-[#e9c349] transition-colors duration-300" href="#about">ABOUT</a>
+      <a class="hover:text-[#e9c349] transition-colors duration-300" href="#message">MESSAGE</a>
+      <a class="hover:text-[#e9c349] transition-colors duration-300" href="#fighter">FIGHTER</a>
+      <a class="hover:text-[#e9c349] transition-colors duration-300" href="#media">MEDIA</a>
+      <a class="hover:text-[#e9c349] transition-colors duration-300" href="#coaching">COACHING</a>
+      <a class="px-6 py-2 bg-primary text-[#4f3e00] hover:bg-primary-dim transition-all" href="#coaching">WORK WITH ME</a>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-primary" aria-label="Open menu">
+      <span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+    </button>
+  </div>
 </nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenu" class="mobile-menu fixed inset-0 z-[60] bg-[#0e0e0e]/95 backdrop-blur-lg flex flex-col items-center justify-center">
+  <button id="menuClose" class="absolute top-6 right-6 text-primary" aria-label="Close menu">
+    <span class="material-symbols-outlined" style="font-size: 32px;">close</span>
+  </button>
+  <div class="flex flex-col items-center space-y-8 font-headline font-bold text-2xl tracking-widest text-white">
+    <a class="hover:text-[#e9c349] transition-colors" href="#about" onclick="closeMobileMenu()">ABOUT</a>
+    <a class="hover:text-[#e9c349] transition-colors" href="#message" onclick="closeMobileMenu()">MESSAGE</a>
+    <a class="hover:text-[#e9c349] transition-colors" href="#fighter" onclick="closeMobileMenu()">FIGHTER</a>
+    <a class="hover:text-[#e9c349] transition-colors" href="#media" onclick="closeMobileMenu()">MEDIA</a>
+    <a class="hover:text-[#e9c349] transition-colors" href="#coaching" onclick="closeMobileMenu()">COACHING</a>
+    <a class="mt-4 px-8 py-3 bg-primary text-[#4f3e00] text-lg" href="#coaching" onclick="closeMobileMenu()">WORK WITH ME</a>
+  </div>
+</div>
+
 <!-- Hero Section -->
 <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-60" data-alt="Intense portrait of a professional fighter in a dimly lit boxing gym with dramatic side lighting and atmospheric dust motes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7gl3N-deFipKXOoKkIbl1UQAPuIxo4_1pyzcMUhfugZ2n4KOHNWA2GMr8t72dsVB4Bu584n6YA-inqNsAvS7p2rYBXJAG9PaIWIn_Wsq9UKkmjCSAxKMPflA1EU8O9pQ5x1CX09J6urntgDYh7c3IaKWomd8fpBFadOb0mD07r5kdW5aFM5lCO86rMRUicCciGmzgG9HKqtvG_mF4cFqVYaOyc6wlw476FzAC-Q3pkKMFVTbJLg9Cp2eOJ4Dj3DzPqt0ITrFAUQ4"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
-</div>
-<div class="relative z-10 container mx-auto px-6 text-center">
-<h1 class="font-headline font-black text-5xl md:text-8xl lg:text-9xl uppercase tracking-tighter leading-none mb-6">
-                Built Through <span class="text-primary">Faith.</span><br/>Forged Through <span class="text-primary">War.</span>
-</h1>
-<p class="font-body text-secondary max-w-2xl mx-auto mb-12 text-lg md:text-xl tracking-tight leading-relaxed">
-                Elite performance is the intersection of a sharpened spirit and a battle-tested body. 19-2 Pro Record. Jersey City Roots. Florida Mindset.
-            </p>
-<div class="flex flex-col md:flex-row items-center justify-center gap-4">
-<a class="w-full md:w-auto px-10 py-5 bg-primary text-on-primary font-headline font-bold text-lg uppercase tracking-wider btn-gold-glow transition-all" href="#coaching">
-                    Work With Me
-                </a>
-<a class="w-full md:w-auto px-10 py-5 border-2 border-outline-variant text-on-background font-headline font-bold text-lg uppercase tracking-wider hover:bg-surface-variant transition-all" href="#media">
-                    Watch the Journey
-                </a>
-</div>
-</div>
+  <div class="absolute inset-0 z-0">
+    <img class="w-full h-full object-cover opacity-50" alt="Jonathan Cepeda in a dimly lit boxing gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7gl3N-deFipKXOoKkIbl1UQAPuIxo4_1pyzcMUhfugZ2n4KOHNWA2GMr8t72dsVB4Bu584n6YA-inqNsAvS7p2rYBXJAG9PaIWIn_Wsq9UKkmjCSAxKMPflA1EU8O9pQ5x1CX09J6urntgDYh7c3IaKWomd8fpBFadOb0mD07r5kdW5aFM5lCO86rMRUicCciGmzgG9HKqtvG_mF4cFqVYaOyc6wlw476FzAC-Q3pkKMFVTbJLg9Cp2eOJ4Dj3DzPqt0ITrFAUQ4"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-background/60"></div>
+  </div>
+  <div class="relative z-10 container mx-auto px-6 text-center">
+    <h1 class="font-headline font-black text-5xl md:text-8xl lg:text-9xl uppercase tracking-tighter leading-[0.9] mb-8">
+      Built Through <span class="text-primary">Faith.</span><br/>Forged Through <span class="text-primary">War.</span>
+    </h1>
+    <div class="max-w-xl mx-auto mb-14 space-y-2">
+      <p class="font-headline font-medium text-white text-lg md:text-xl tracking-wide">
+        Professional Fighter &mdash; 19&ndash;2, 18 KOs
+      </p>
+      <p class="font-body text-secondary text-base md:text-lg tracking-tight">
+        Spiritual Mindset Coaching
+      </p>
+    </div>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a class="w-full sm:w-auto px-10 py-5 bg-primary text-[#4f3e00] font-headline font-bold text-lg uppercase tracking-wider btn-gold-glow transition-all" href="#coaching">
+        Work With Me
+      </a>
+      <a class="w-full sm:w-auto px-10 py-5 border-2 border-outline-variant text-on-background font-headline font-bold text-lg uppercase tracking-wider hover:bg-surface-variant transition-all" href="#media">
+        Watch the Journey
+      </a>
+    </div>
+  </div>
 </section>
+
 <!-- About Section -->
-<section class="py-24 bg-surface-container-low" id="about">
-<div class="container mx-auto px-6">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="relative group">
-<div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-primary z-10"></div>
-<img class="w-full grayscale hover:grayscale-0 transition-all duration-700 aspect-[4/5] object-cover" data-alt="Gritty black and white action shot of a fighter training with heavy bags in an old-school urban gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmCCQ8ID1lzlxcMw1h7lhpYX7eqK6cb0pjXUv_snN_wboyL1IGBSxNLC0wB0_PdZSEh7UNKgALJ7FR7fSMwK7kP9NmAjyOCG9-eUBIesKwm2LXnaJt2swD361SYEm1ndsp-YR7ExeXXObHx1EZucrnJSXSkw3QoH0T10pUAYKEWVOkWQDtJNQYkmYpsq-AUT2OC7X_Mranj2g4dZI754M6C6lwcZ0e-5NHSrQ6sQ0V4NULwA5BdikF-CH45caCoZqvZRYfLap4opQ"/>
-<div class="absolute bottom-0 right-0 bg-primary p-8 hidden md:block">
-<span class="font-headline font-black text-6xl text-on-primary leading-none">JC</span>
-</div>
-</div>
-<div class="space-y-8">
-<span class="text-primary font-headline font-bold tracking-[0.3em] uppercase text-sm">Origins &amp; Evolution</span>
-<h2 class="font-headline font-black text-4xl md:text-6xl uppercase tracking-tighter">The Journey from Jersey</h2>
-<div class="space-y-6 text-secondary text-lg leading-relaxed max-w-xl">
-<p>Jonathan Cepeda wasn't born in a ring; he was forged on the asphalt of Jersey City. Every strike he throws today carries the weight of where he came from—the hunger, the grit, and the relentless pursuit of something greater.</p>
-<p>The transition to Florida marked a metamorphosis. It wasn't just a change in climate, but a shift in consciousness. Pro fighting became the vehicle, but faith became the fuel. Today, he stands as a testament to what happens when you combine elite physical discipline with a spiritual foundation that cannot be shaken.</p>
-</div>
-<div class="pt-4">
-<a class="inline-flex items-center gap-2 group text-primary font-headline font-bold uppercase tracking-widest border-b-2 border-primary pb-1" href="#">
-                            READ THE FULL STORY
-                            <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</div>
+<section class="py-28 md:py-36 bg-surface-container-low" id="about">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <div class="relative group">
+        <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-primary z-10"></div>
+        <img class="w-full grayscale hover:grayscale-0 transition-all duration-700 aspect-[4/5] object-cover" alt="Jonathan Cepeda training in the gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmCCQ8ID1lzlxcMw1h7lhpYX7eqK6cb0pjXUv_snN_wboyL1IGBSxNLC0wB0_PdZSEh7UNKgALJ7FR7fSMwK7kP9NmAjyOCG9-eUBIesKwm2LXnaJt2swD361SYEm1ndsp-YR7ExeXXObHx1EZucrnJSXSkw3QoH0T10pUAYKEWVOkWQDtJNQYkmYpsq-AUT2OC7X_Mranj2g4dZI754M6C6lwcZ0e-5NHSrQ6sQ0V4NULwA5BdikF-CH45caCoZqvZRYfLap4opQ"/>
+        <div class="absolute bottom-0 right-0 bg-primary p-8 hidden md:block">
+          <span class="font-headline font-black text-6xl text-on-primary leading-none">JC</span>
+        </div>
+      </div>
+      <div class="space-y-8">
+        <span class="text-primary font-headline font-bold tracking-[0.3em] uppercase text-sm">Origins &amp; Evolution</span>
+        <h2 class="font-headline font-black text-4xl md:text-6xl uppercase tracking-tighter leading-[0.95]">The Journey<br/>from Jersey</h2>
+        <div class="space-y-6 text-secondary text-lg leading-relaxed max-w-xl">
+          <p>Jonathan Cepeda wasn't built in a gym &mdash; he was built through life.</p>
+          <p>Raised in Jersey City, he grew up in an environment where toughness wasn't optional. Fighting came naturally, but boxing didn't enter his life until the age of twenty. What some would call a late start became his advantage &mdash; because the lessons were already there.</p>
+          <p>After moving to Florida at sixteen, he experienced a completely different world. That contrast gave him the grit of the streets and the awareness to move through any environment.</p>
+          <p>Today, as a professional fighter with a 19&ndash;2 record and a reputation for finishing fights, Cepeda brings more than power into the ring. He brings discipline, control, and mindset.</p>
+          <p class="text-on-surface font-medium">Because to him, the fight is never just physical &mdash; it's mental and spiritual.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Message Section -->
-<section class="py-32 bg-surface-container-lowest relative overflow-hidden" id="message">
-<div class="absolute -right-20 top-0 opacity-10 select-none">
-<span class="text-[20rem] font-headline font-black leading-none text-stroke-thin">ALPHA</span>
-</div>
-<div class="container mx-auto px-6 relative z-10 text-center">
-<div class="max-w-4xl mx-auto space-y-16">
-<span class="font-headline font-bold text-primary tracking-[0.5em] uppercase text-sm">The Alpha Mind Manifesto</span>
-<div class="space-y-8">
-<h3 class="font-headline font-black text-3xl md:text-6xl uppercase leading-tight italic border-l-4 border-primary px-8 inline-block">
-                        "Discipline is spiritual. The mind is the battlefield. Control creates power. Faith is the foundation."
-                    </h3>
-</div>
-<div class="flex justify-center items-center gap-4">
-<div class="h-[1px] w-12 bg-outline-variant"></div>
-<span class="text-secondary tracking-widest font-headline uppercase text-xs">A Way of Life</span>
-<div class="h-[1px] w-12 bg-outline-variant"></div>
-</div>
-</div>
-</div>
+<section class="py-36 md:py-44 bg-surface-container-lowest relative overflow-hidden" id="message">
+  <div class="absolute -right-20 top-0 opacity-[0.04] select-none pointer-events-none">
+    <span class="text-[20rem] font-headline font-black leading-none text-stroke-thin">ALPHA</span>
+  </div>
+  <div class="container mx-auto px-6 relative z-10 text-center">
+    <div class="max-w-4xl mx-auto space-y-16">
+      <span class="font-headline font-bold text-primary tracking-[0.5em] uppercase text-sm">The Alpha Mind</span>
+      <div class="space-y-4 md:space-y-6">
+        <p class="font-headline font-black text-3xl md:text-6xl uppercase leading-tight">Discipline is spiritual.</p>
+        <p class="font-headline font-black text-3xl md:text-6xl uppercase leading-tight">The mind is the battlefield.</p>
+        <p class="font-headline font-black text-3xl md:text-6xl uppercase leading-tight text-primary">Control creates power.</p>
+        <p class="font-headline font-black text-3xl md:text-6xl uppercase leading-tight">Faith is the foundation.</p>
+      </div>
+      <div class="flex justify-center items-center gap-4">
+        <div class="h-[1px] w-12 bg-outline-variant"></div>
+        <span class="text-secondary tracking-widest font-headline uppercase text-xs">A Way of Life</span>
+        <div class="h-[1px] w-12 bg-outline-variant"></div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Fighter Section -->
-<section class="py-24 bg-surface-container" id="fighter">
-<div class="container mx-auto px-6">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20 text-center">
-<div class="bg-surface-container-high py-12 px-6">
-<div class="font-headline font-black text-7xl text-primary mb-2">19</div>
-<div class="font-headline font-bold text-on-surface tracking-widest uppercase text-sm">TOTAL WINS</div>
-</div>
-<div class="bg-surface-container-high py-12 px-6">
-<div class="font-headline font-black text-7xl text-primary mb-2">18</div>
-<div class="font-headline font-bold text-on-surface tracking-widest uppercase text-sm">K.O. VICTORIES</div>
-</div>
-<div class="bg-surface-container-high py-12 px-6">
-<div class="font-headline font-black text-7xl text-primary mb-2">02</div>
-<div class="font-headline font-bold text-on-surface tracking-widest uppercase text-sm">LOSSES</div>
-</div>
-</div>
-<div class="max-w-4xl mx-auto text-center">
-<h2 class="font-headline font-black text-4xl md:text-5xl uppercase tracking-tighter mb-8">The Kinetic Strike</h2>
-<p class="font-body text-secondary text-xl leading-relaxed">
-                    Jonathan's style is characterized by surgical precision and explosive kinetic energy. He doesn't just fight; he dismantles opponents through a deep understanding of leverage, timing, and psychological dominance. Every training camp is an evolution of technique and a deepening of resolve.
-                </p>
-</div>
-</div>
+<section class="py-28 md:py-36 bg-surface-container" id="fighter">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 mb-20 text-center">
+      <div class="bg-surface-container-high py-14 px-6">
+        <div class="font-headline font-black text-7xl md:text-8xl text-primary mb-2">19</div>
+        <div class="font-headline font-bold text-on-surface tracking-widest uppercase text-sm">WINS</div>
+      </div>
+      <div class="bg-surface-container-high py-14 px-6">
+        <div class="font-headline font-black text-7xl md:text-8xl text-primary mb-2">18</div>
+        <div class="font-headline font-bold text-on-surface tracking-widest uppercase text-sm">KOs</div>
+      </div>
+      <div class="bg-surface-container-high py-14 px-6">
+        <div class="font-headline font-black text-7xl md:text-8xl text-primary mb-2">02</div>
+        <div class="font-headline font-bold text-on-surface tracking-widest uppercase text-sm">LOSSES</div>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto text-center space-y-6">
+      <h2 class="font-headline font-black text-4xl md:text-5xl uppercase tracking-tighter">The Record Speaks</h2>
+      <div class="space-y-6 font-body text-secondary text-xl leading-relaxed">
+        <p>Jonathan Cepeda is known for his explosive power and aggressive style, building a reputation as a fighter who doesn't just win &mdash; he finishes.</p>
+        <p>But behind the knockouts is evolution. Through experience and discipline, he has developed patience, composure, and control &mdash; turning raw power into calculated precision.</p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Media Section (Bento Grid Style) -->
-<section class="py-24 bg-surface" id="media">
-<div class="container mx-auto px-6">
-<div class="flex justify-between items-end mb-12">
-<h2 class="font-headline font-black text-4xl md:text-6xl uppercase tracking-tighter">Inside the Journey</h2>
-<div class="hidden md:block h-[2px] flex-grow mx-8 bg-outline-variant/30"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-<div class="md:col-span-2 relative aspect-video group overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-intensity fight highlight showing a knockout punch with flying sweat and dramatic ring lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEIEz8ANzbaAXotAySSOQ1kMDkv-EM8AwetmS0h0-7YKBi2_biG5Xmr9jbLpQ8PO8w7LbALqlB72j1J5-y75DdJvPa6IHiqIFx9gyn5wKQmBdtD3l8RD6j4nr_l9OVKYRNmSz1SeypriiGsM5LZgZY1_tRVkwm-H7fdDkT7js9114Vgi6xpn8hOHLqbqWkTPtYmbsn2-L-x3Xi2c58vVMCRpH1EEAs3RnksHbBT2yHeLqkVstmJT9OGsbQZUD9Jc7wyk_NK66hWgE"/>
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all">
-<div class="bg-primary p-6 flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</div>
-</div>
-<div class="absolute bottom-6 left-6">
-<span class="font-headline font-bold text-white uppercase tracking-widest bg-black/80 px-4 py-2 text-sm">FIGHT HIGHLIGHTS</span>
-</div>
-</div>
-<div class="relative aspect-square md:aspect-auto group overflow-hidden">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Close up of heavily wrapped hands and boxing gloves on a weathered training bench" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3-e_gQ0aNtx6KsGhmDtyP-QGiAkAL136KUsh-kq_ha2d6cwi4U3VVwItF6zTFjCtoH4WFKGDH2H-YG8mVf4UynFPFSm-qO7JOD2AL-PXem71rquviMkBLsoJmp6t_LHgyICwQXfaPxhZQw-m6mKtymP7Zr6ldL0X0Dcb3IKqk4IU1TUClig3dTrzcThkYQNc7W5MaTitrgv6h3K5z09lbPlaGdvN3nan4BJMgs2W-MRI1OIKifR2S1ptVLAspyoixvhSvTvSqkk8"/>
-<div class="absolute bottom-6 left-6">
-<span class="font-headline font-bold text-white uppercase tracking-widest bg-black/80 px-4 py-2 text-sm">TRAINING SESSIONS</span>
-</div>
-</div>
-<div class="relative aspect-square md:aspect-auto group overflow-hidden">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Fighter sitting in meditation in a dark studio, silhouettes against a single high-contrast light source" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9DnYY8yBk5SG1nVCsu63D5w-7vsu56B5bW6QrJAl-hT72o1cO3Wgh1rMGnZ0v1kUCqOZqc6cqRXh4ih70XjTsgOsQHvQF4bMHkHgepWFOTZQC5-1jAi32y13G5-wziMkpakNvTzi_zsVarVXJk4NHV97vG-1wxKM6WPFXE1GCS-rbiYZ22WwyMdsJJGzLm8pegJqaKDY2VMUmWfh2DrQ9oVLB2b7ig4ZPu5a-30ascBduvGwwb2sggzq3fi_R-PRhMCL2vGTUTN4"/>
-<div class="absolute bottom-6 left-6">
-<span class="font-headline font-bold text-white uppercase tracking-widest bg-black/80 px-4 py-2 text-sm">MINDSET &amp; PHILOSOPHY</span>
-</div>
-</div>
-<div class="md:col-span-2 bg-primary p-12 flex flex-col justify-between">
-<h3 class="font-headline font-black text-4xl text-on-primary uppercase leading-none">THE FULL REEL</h3>
-<p class="text-on-primary-fixed-variant font-medium mt-4 mb-8 text-lg">Watch the evolution of a champion from the streets of Jersey to the bright lights of the professional circuit.</p>
-<a class="inline-flex items-center gap-3 font-headline font-bold text-on-primary uppercase tracking-widest" href="#">
-                        BROWSE CHANNEL
-                        <span class="material-symbols-outlined">north_east</span>
-</a>
-</div>
-</div>
-</div>
+
+<!-- Media Section -->
+<section class="py-28 md:py-36 bg-surface" id="media">
+  <div class="container mx-auto px-6">
+    <div class="flex justify-between items-end mb-16">
+      <h2 class="font-headline font-black text-4xl md:text-6xl uppercase tracking-tighter">Inside the Journey</h2>
+      <div class="hidden md:block h-[2px] flex-grow mx-8 bg-outline-variant/30"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Fight Highlights -->
+      <div class="lg:col-span-2">
+        <div class="video-card bg-surface-container-high">
+          <!-- Replace src with actual YouTube embed URL -->
+          <iframe src="about:blank" title="Fight Highlights" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="mt-4">
+          <span class="font-headline font-bold text-on-surface uppercase tracking-widest text-sm">Fight Highlights</span>
+        </div>
+      </div>
+
+      <!-- Training Sessions -->
+      <div>
+        <div class="video-card bg-surface-container-high">
+          <!-- Replace src with actual YouTube embed URL -->
+          <iframe src="about:blank" title="Training Sessions" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="mt-4">
+          <span class="font-headline font-bold text-on-surface uppercase tracking-widest text-sm">Training Sessions</span>
+        </div>
+      </div>
+
+      <!-- Mindset & Philosophy -->
+      <div>
+        <div class="video-card bg-surface-container-high">
+          <!-- Replace src with actual YouTube embed URL -->
+          <iframe src="about:blank" title="Mindset and Philosophy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="mt-4">
+          <span class="font-headline font-bold text-on-surface uppercase tracking-widest text-sm">Mindset &amp; Philosophy</span>
+        </div>
+      </div>
+
+      <!-- Channel CTA -->
+      <div class="lg:col-span-2 bg-primary p-10 md:p-12 flex flex-col justify-between min-h-[200px]">
+        <div>
+          <h3 class="font-headline font-black text-3xl md:text-4xl text-on-primary uppercase leading-none">THE FULL REEL</h3>
+          <p class="text-on-primary-fixed-variant font-medium mt-4 mb-8 text-lg max-w-lg">From the streets of Jersey to the bright lights of the professional circuit.</p>
+        </div>
+        <a class="inline-flex items-center gap-3 font-headline font-bold text-on-primary uppercase tracking-widest hover:gap-5 transition-all" href="#">
+          BROWSE CHANNEL
+          <span class="material-symbols-outlined">north_east</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
 </section>
+
 <!-- Coaching Section -->
-<section class="py-24 bg-surface-container-low" id="coaching">
-<div class="container mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="font-headline font-black text-4xl md:text-6xl uppercase tracking-tighter mb-4">Work With Jonathan</h2>
-<p class="text-secondary max-w-2xl mx-auto">Elite mentorship for those ready to transcend their current limits.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="bg-surface-container-highest p-10 flex flex-col justify-between border-t-4 border-transparent hover:border-primary transition-all duration-300">
-<div>
-<span class="material-symbols-outlined text-primary text-4xl mb-6">fitness_center</span>
-<h3 class="font-headline font-bold text-2xl uppercase mb-4 tracking-tight">1-on-1 Coaching</h3>
-<p class="text-secondary mb-8 leading-relaxed">Direct access to Jonathan for high-intensity physical and technical development tailored to your specific goals.</p>
-</div>
-<button class="w-full py-4 bg-surface-container text-primary font-headline font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">APPLY</button>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-highest p-10 flex flex-col justify-between border-t-4 border-primary transition-all duration-300 shadow-2xl">
-<div>
-<span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
-<h3 class="font-headline font-bold text-2xl uppercase mb-4 tracking-tight">Mindset Training</h3>
-<p class="text-secondary mb-8 leading-relaxed">Systematic psychological conditioning based on the Alpha Mind manifesto. Develop an unbreakable spiritual foundation.</p>
-</div>
-<button class="w-full py-4 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest hover:bg-primary-dim transition-all">APPLY</button>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-highest p-10 flex flex-col justify-between border-t-4 border-transparent hover:border-primary transition-all duration-300">
-<div>
-<span class="material-symbols-outlined text-primary text-4xl mb-6">sports_kabaddi</span>
-<h3 class="font-headline font-bold text-2xl uppercase mb-4 tracking-tight">Fighter Mentorship</h3>
-<p class="text-secondary mb-8 leading-relaxed">Advanced strategy and mental preparation for professional and aspiring fighters looking to take their career to the elite tier.</p>
-</div>
-<button class="w-full py-4 bg-surface-container text-primary font-headline font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">APPLY</button>
-</div>
-</div>
-</div>
+<section class="py-28 md:py-36 bg-surface-container-low" id="coaching">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-20">
+      <h2 class="font-headline font-black text-4xl md:text-6xl uppercase tracking-tighter mb-4">Work With Jonathan</h2>
+      <p class="text-secondary max-w-xl mx-auto text-lg">Elite mentorship for those ready to do the work.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-surface-container-highest p-10 flex flex-col justify-between border-t-4 border-transparent hover:border-primary transition-all duration-300 min-h-[320px]">
+        <div>
+          <span class="material-symbols-outlined text-primary text-4xl mb-6">fitness_center</span>
+          <h3 class="font-headline font-bold text-2xl uppercase mb-4 tracking-tight">1-on-1 Coaching</h3>
+          <p class="text-secondary leading-relaxed">Personalized guidance focused on discipline, mindset, and growth.</p>
+        </div>
+        <button class="w-full mt-8 py-4 bg-surface-container text-primary font-headline font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">APPLY</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-surface-container-highest p-10 flex flex-col justify-between border-t-4 border-primary transition-all duration-300 shadow-2xl min-h-[320px]">
+        <div>
+          <span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
+          <h3 class="font-headline font-bold text-2xl uppercase mb-4 tracking-tight">Mindset Training</h3>
+          <p class="text-secondary leading-relaxed">Build focus, control, and mental strength.</p>
+        </div>
+        <button class="w-full mt-8 py-4 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest hover:bg-primary-dim transition-all">APPLY</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-surface-container-highest p-10 flex flex-col justify-between border-t-4 border-transparent hover:border-primary transition-all duration-300 min-h-[320px]">
+        <div>
+          <span class="material-symbols-outlined text-primary text-4xl mb-6">sports_kabaddi</span>
+          <h3 class="font-headline font-bold text-2xl uppercase mb-4 tracking-tight">Fighter Mentorship</h3>
+          <p class="text-secondary leading-relaxed">For athletes looking to elevate performance and discipline.</p>
+        </div>
+        <button class="w-full mt-8 py-4 bg-surface-container text-primary font-headline font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all">APPLY</button>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Final CTA -->
-<section class="py-32 bg-primary relative">
-<div class="container mx-auto px-6 text-center">
-<h2 class="font-headline font-black text-4xl md:text-7xl text-on-primary uppercase tracking-tighter mb-12 leading-none">
-                Step Into Who You're <br class="hidden md:block"/> Meant To Be.
-            </h2>
-<div class="flex flex-col md:flex-row items-center justify-center gap-6">
-<a class="w-full md:w-auto px-12 py-6 bg-on-primary text-primary font-headline font-black text-xl uppercase tracking-widest shadow-xl hover:scale-105 transition-all" href="#">
-                    Apply for Coaching
-                </a>
-<a class="w-full md:w-auto px-12 py-6 border-2 border-on-primary text-on-primary font-headline font-black text-xl uppercase tracking-widest hover:bg-on-primary/10 transition-all" href="#">
-                    Follow the Journey
-                </a>
-</div>
-</div>
+<section class="py-32 md:py-40 bg-primary relative">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="font-headline font-black text-4xl md:text-7xl text-on-primary uppercase tracking-tighter mb-14 leading-[0.95]">
+      Step Into Who You're<br class="hidden md:block"/> Meant To Be.
+    </h2>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+      <a class="w-full sm:w-auto px-12 py-6 bg-[#4f3e00] text-primary font-headline font-black text-xl uppercase tracking-widest shadow-xl hover:scale-105 transition-all" href="#coaching">
+        Apply for Coaching
+      </a>
+      <a class="w-full sm:w-auto px-12 py-6 border-2 border-[#4f3e00] text-[#4f3e00] font-headline font-black text-xl uppercase tracking-widest hover:bg-[#4f3e00]/10 transition-all" href="#media">
+        Follow the Journey
+      </a>
+    </div>
+  </div>
 </section>
+
 <!-- Footer -->
-<footer class="bg-surface-container-lowest py-20 px-4 w-full flex flex-col items-center gap-8" id="contact">
-<div class="font-headline font-black text-3xl text-[#e9c349] tracking-tighter">JONATHAN CEPEDA</div>
-<div class="flex gap-12">
-<a class="text-[#484848] hover:text-white transition-all font-headline font-bold text-xs tracking-widest uppercase" href="#">MANIFESTO</a>
-<a class="text-[#484848] hover:text-white transition-all font-headline font-bold text-xs tracking-widest uppercase" href="#">TRAINING</a>
-<a class="text-[#484848] hover:text-white transition-all font-headline font-bold text-xs tracking-widest uppercase" href="#">MINDSET</a>
-<a class="text-[#484848] hover:text-white transition-all font-headline font-bold text-xs tracking-widest uppercase" href="#">CONTACT</a>
-</div>
-<div class="flex flex-col md:flex-row gap-8 md:gap-24 items-center text-center">
-<div class="space-y-2">
-<span class="font-headline text-[#484848] text-xs uppercase tracking-[0.3em]">Direct Email</span>
-<p class="font-headline font-bold text-primary">JONATHAN@CEPEDAFIGHT.COM</p>
-</div>
-<div class="space-y-2">
-<span class="font-headline text-[#484848] text-xs uppercase tracking-[0.3em]">Social Core</span>
-<p class="font-headline font-bold text-primary">@JONATHANCEPEDA_</p>
-</div>
-</div>
-<div class="mt-12 text-center">
-<p class="font-body text-[#484848] text-[10px] tracking-[0.4em] uppercase">
-                © 2024 JONATHAN CEPEDA. THE KINETIC EDGE. ALL RIGHTS RESERVED.
-            </p>
-</div>
+<footer class="bg-surface-container-lowest py-20 px-6 w-full flex flex-col items-center gap-10" id="contact">
+  <div class="font-headline font-black text-3xl text-[#e9c349] tracking-tighter uppercase">Jonathan Cepeda</div>
+  <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+    <a class="text-[#484848] hover:text-white transition-all font-headline font-bold text-xs tracking-widest uppercase" href="#about">ABOUT</a>
+    <a class="text-[#484848] hover:text-white transition-all font-headline font-bold text-xs tracking-widest uppercase" href="#coaching">COACHING</a>
+    <a class="text-[#484848] hover:text-white transition-all font-headline font-bold text-xs tracking-widest uppercase" href="#message">MINDSET</a>
+    <a class="text-[#484848] hover:text-white transition-all font-headline font-bold text-xs tracking-widest uppercase" href="#media">MEDIA</a>
+  </div>
+  <div class="flex flex-col md:flex-row gap-8 md:gap-24 items-center text-center">
+    <div class="space-y-2">
+      <span class="font-headline text-[#484848] text-xs uppercase tracking-[0.3em]">Email</span>
+      <p class="font-headline font-bold text-primary">JONATHAN@CEPEDAFIGHT.COM</p>
+    </div>
+    <div class="space-y-2">
+      <span class="font-headline text-[#484848] text-xs uppercase tracking-[0.3em]">Instagram</span>
+      <a href="https://instagram.com/jonathancepeda_" target="_blank" rel="noopener" class="block font-headline font-bold text-primary hover:text-primary-dim transition-colors">@JONATHANCEPEDA_</a>
+    </div>
+  </div>
+  <div class="mt-8 text-center">
+    <p class="font-body text-[#484848] text-[10px] tracking-[0.4em] uppercase">
+      &copy; 2025 JONATHAN CEPEDA. THE KINETIC EDGE. ALL RIGHTS RESERVED.
+    </p>
+  </div>
 </footer>
-</body></html>
+
+<script>
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const menuClose = document.getElementById('menuClose');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+  menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('open');
+  }
+
+  // Active nav highlight on scroll
+  const sections = document.querySelectorAll('section[id], footer[id]');
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const top = section.offsetTop - 100;
+      if (scrollY >= top) current = section.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('text-[#e9c349]');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('text-[#e9c349]');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
